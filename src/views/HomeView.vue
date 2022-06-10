@@ -1,4 +1,4 @@
-    <template>
+<template>
   <div class="home">
     <div class="splash-container">
       <div class="splash">
@@ -9,13 +9,8 @@
     <main class="wrapper">
       <h2>Recommended</h2>
       <div class="recommended">
-        <ProductCardComponent
-          class="card"
-          v-for="product in inventory.slice(0, 3)"
-          :key="product.id"
-          :product="product"
-          :addToCart="addToCart"
-        />
+        <ProductCardComponent class="card" v-for="product in inventory.slice(0, 3)" :key="product.id" :product="product"
+          :addToCart="addToCart" />
       </div>
     </main>
   </div>
